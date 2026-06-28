@@ -4,8 +4,12 @@ namespace Matrix
     class Program
     {
         static void Main(string[] args)
-        {            
-            ConsoleMatrixRainEffect.Run();
+        {
+            var config = new MatrixConfig();
+
+            var effect = new MatrixEffect(config);
+
+            effect.Run();
         }
     }
 }
